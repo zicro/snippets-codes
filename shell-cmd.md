@@ -173,3 +173,19 @@ ls: It stands for "list" and is a command used to list files and directories.
 sort: It's a command used to sort lines of text alphabetically.
 ```
 
+
+## shell - permissions
+
+###### print the name of the current user. : 
+```shell
+whoami
+```
+
+###### switch to another user account or become a superuser (also known as "root"). : 
+```shell
+su root
+```
+
+>This command is commonly used for administrative purposes, where a user may need to perform tasks that require elevated privileges, such as managing system configurations or installing software packages. It is important to exercise caution when using the su command, as switching to the root account can potentially cause damage to the system if used improperly.
+
+
