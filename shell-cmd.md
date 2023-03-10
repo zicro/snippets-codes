@@ -1,8 +1,8 @@
-## Shell snippet commands : 
+### Shell snippet commands : 
 
 > This is a list of commands we can use in shell.
 
-### lists the files and directories in the current directory : 
+##### lists the files and directories in the current directory : 
 ```shell
 ls
 ```
@@ -12,7 +12,7 @@ ls
 cd myfolder
 ```
 
-### Print the current working directory: 
+##### Print the current working directory: 
 ```shell
 pwd
 ```
@@ -22,33 +22,33 @@ pwd
 mkdir newfolder
 ```
 
-### Displays the contents of a file : 
+##### Displays the contents of a file : 
 ```shell
 cat file_name
 ```
 
-### Searches for a string in a file : 
+##### Searches for a string in a file : 
 ```shell
 grep
 ```
 
-### Changes the permissions of a file or directory : 
+##### Changes the permissions of a file or directory : 
 ```shell
 chmod
 ```
 
-### Executes a command with superuser privileges: 
+##### Executes a command with superuser privileges: 
 ```shell
 sudo
 ```
 
-### To delete a file named "myfile.txt" in the current directory, you would type : 
+##### To delete a file named "myfile.txt" in the current directory, you would type : 
 ```shell
 rm myfile.txt
 ```
 
 
-### To delete a directory and all of its contents, you can use the -r flag, like this : 
+##### To delete a directory and all of its contents, you can use the -r flag, like this : 
 ```shell
 rm -r myfolder
 ```
@@ -60,7 +60,7 @@ cp myfile.txt myfolder/
 ```
 
 
-### To copy a directory and all of its contents, you can use the -r flag, like this : 
+##### To copy a directory and all of its contents, you can use the -r flag, like this : 
 ```shell
 cp -r myfolder mynewfolder/
 ```
@@ -72,39 +72,39 @@ mv myfile.txt myfolder/
 ```
 
 
-### To move a directory and all of its contents, you can use the -r flag, like this : 
+##### To move a directory and all of its contents, you can use the -r flag, like this : 
 ```shell
 mv -r myfolder mynewfolder/
 ```
 
-### to create a file named "newfile.txt" in the current directory, you would type : 
+##### to create a file named "newfile.txt" in the current directory, you would type : 
 ```shell
 touch newfile.txt
 ```
 
 
-### Display the manual page for a command or program : 
+##### Display the manual page for a command or program : 
 ```shell
 man 
 ```
 
 
-### Display text on the terminal : 
+##### Display text on the terminal : 
 ```shell
 echo 
 ```
 
-### Display a list of previously executed commands : 
+##### Display a list of previously executed commands : 
 ```shell
 history  
 ```
 
-### Search for files in a directory hierarchy : 
+##### Search for files in a directory hierarchy : 
 ```shell
 find   
 ```
 
-### change directory to the user's home directory : 
+##### change directory to the user's home directory : 
 ```shell
  cd ~  
 ```
@@ -117,5 +117,10 @@ find
 ##### list of all files and directories in the current working directory, including hidden files and directories, with detailed information such as file permissions, ownership, size, and modification date/time. : 
 ```shell
 ls -la 
+```
+
+######  list of all files and directories in the current working directory, including hidden files and directories, with detailed information such as file permissions, ownership, size, and modification date/time. However, instead of displaying the user and group names, it displays their numeric IDs. This can be useful in cases where the names are not important or cannot be displayed properly. : 
+```shell
+ls -an
 ```
 
