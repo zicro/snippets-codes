@@ -189,3 +189,27 @@ su root
 >This command is commonly used for administrative purposes, where a user may need to perform tasks that require elevated privileges, such as managing system configurations or installing software packages. It is important to exercise caution when using the su command, as switching to the root account can potentially cause damage to the system if used improperly.
 
 
+###### display the list of groups a user belongs to. : 
+```shell
+groups
+```
+
+###### change the ownership of a file or directory to a specified user or group. : 
+```shell
+groups
+```
+>In the command chown betty hello, the user is asking to change the ownership of the file named "hello" to the user account named "betty". If the user running the command has sufficient privileges, the ownership of the file will be changed to the specified user.
+
+
+######  modify the permissions of a file or directory : 
+```shell
+chmod u+x hello
+```
+>The chmod command uses a combination of letters and numbers to specify the permissions to be set. The letter u represents the owner of the file, while +x means to add the execute permission. Alternatively, -x would remove the execute permission, and =x would set the execute permission only for the owner, and remove it for all others.
+
+######  modify the permissions of a file or directory to user and group and owner: 
+```shell
+chmod ug+x,o+r hello
+```
+>the user is asking to add execute permission to the owner and group (represented by ug) of the file named "hello", and add read permission to others (represented by o). If the user running the command has sufficient privileges, the permissions of the file will be changed accordingly.
+
