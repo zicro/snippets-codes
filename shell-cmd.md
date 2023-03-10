@@ -7,7 +7,7 @@
 ls
 ```
 
-### changes the current directory. For example, to move to the directory named "myfolder" in the current directory, you would type : 
+##### changes the current directory. For example, to move to the directory named "myfolder" in the current directory, you would type : 
 ```shell
 cd myfolder
 ```
@@ -17,7 +17,7 @@ cd myfolder
 pwd
 ```
 
-### creates a new directory. For example, to create a directory named "newfolder" in the current directory, you would type : 
+##### creates a new directory. For example, to create a directory named "newfolder" in the current directory, you would type : 
 ```shell
 mkdir newfolder
 ```
@@ -54,7 +54,7 @@ rm -r myfolder
 ```
 
 
-### To copy a file named "myfile.txt" from the current directory to a directory named "myfolder" in the same directory, you would type : 
+##### To copy a file named "myfile.txt" from the current directory to a directory named "myfolder" in the same directory, you would type : 
 ```shell
 cp myfile.txt myfolder/
 ```
@@ -66,7 +66,7 @@ cp -r myfolder mynewfolder/
 ```
 
 
-### To move a file named "myfile.txt" from the current directory to a directory named "myfolder" in the same directory, you would type : 
+##### To move a file named "myfile.txt" from the current directory to a directory named "myfolder" in the same directory, you would type : 
 ```shell
 mv myfile.txt myfolder/
 ```
@@ -104,5 +104,18 @@ history
 find   
 ```
 
+### change directory to the user's home directory : 
+```shell
+ cd ~  
+```
 
+##### provides additional information about each file, including its permissions, ownership, file size, and creation time : 
+```shell
+ ls -l  
+```
+
+##### list of all files and directories in the current working directory, including hidden files and directories, with detailed information such as file permissions, ownership, size, and modification date/time. : 
+```shell
+ls -la 
+```
 
