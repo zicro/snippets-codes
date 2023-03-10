@@ -196,7 +196,7 @@ groups
 
 ###### change the ownership of a file or directory to a specified user or group. : 
 ```shell
-groups
+chown betty hello
 ```
 >In the command chown betty hello, the user is asking to change the ownership of the file named "hello" to the user account named "betty". If the user running the command has sufficient privileges, the ownership of the file will be changed to the specified user.
 
