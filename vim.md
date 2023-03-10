@@ -2,58 +2,58 @@
 
 > This is a list of commands we can use in vi.
 
-### openning a File : 
+###### openning a File : 
 ```shell
 vim file_name
 ```
 
-### Saving a File : 
+###### Saving a File : 
 ```shell
 :wq
 ```
 
 
-### Cutting a File : 
+###### Cutting a File : 
 ```shell
 dd
 ```
 
 
-### Pasting a File : 
+###### Pasting a File : 
 ```shell
 p
 ```
 
 
-### Searching a File : 
+###### Searching a File : 
 ```shell
 /
 ```
 
 
-### Undoing a File : 
+###### Undoing a File : 
 ```shell
 u
 ```
 
 
-### Quitting a File : 
+###### Quitting a File : 
 ```shell
 :q!
 ```
 
 
-### inserting a File : 
+###### inserting a File : 
 ```shell
 i
 ```
 
-### end of the line in a File : 
+###### end of the line in a File : 
 ```shell
 $
 ```
 
-### start of the line in a File : 
+###### start of the line in a File : 
 ```shell
 0
 ```
