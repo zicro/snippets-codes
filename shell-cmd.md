@@ -124,3 +124,54 @@ ls -la
 ls -an
 ```
 
+##### create a new directory called "my_first_directory" in the "/tmp" directory, which is located in the root directory. : 
+```shell
+mkdir ~/../tmp/my_first_directory
+```
+
+##### change the current working directory to the previous working directory. : 
+```shell
+cd -
+```
+
+###### analyze the contents of the "iamafile" and try to determine its type. For example, it may identify the file as a text file, image file, or binary file. The output of the command will show the type of the file based on its contents. This can be useful in cases where the file extension is not available or not reliable in determining the file type. : 
+```shell
+file /tmp/iamafile
+```
+
+###### create a symbolic link called "ls" that points to the "/bin/ls" file. This means that when you run the "ls" command, it will execute the "ls" command and list the contents of the current directory. Symbolic links can be useful in cases where you want to create a shortcut or alias for a command or file. : 
+```shell
+ln -s /bin/ls __ls__
+```
+
+##### copy all files with the ".html" extension in the current directory to the parent directory "../", without overwriting any files with the same name. : 
+```shell
+cp -n *.html ../
+```
+
+##### move all files in the current directory whose names start with an uppercase letter to the "/tmp/u" directory. : 
+```shell
+mv [[:upper:]]* /tmp/u
+```
+
+##### delete all files in the current directory that end with a tilde (~) character. : 
+```shell
+rm *~
+```
+
+##### -p: It's an option used with the mkdir command to create parent directories if they don't already exist. : 
+```shell
+mkdir -p welcome/to/school
+```
+
+##### list all files and directories in the current directory, including hidden files, with additional information like file types, permissions, and file sizes, sorted alphabetically. : 
+```shell
+ls -map | sort
+
+ls: It stands for "list" and is a command used to list files and directories.
+-m: It's an option used with the ls command to separate file names with a comma.
+-a: It's an option used with the ls command to list all files, including hidden files.
+-p: It's an option used with the ls command to append a "/" to directories.
+sort: It's a command used to sort lines of text alphabetically.
+```
+
