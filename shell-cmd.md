@@ -213,3 +213,47 @@ chmod ug+x,o+r hello
 ```
 >the user is asking to add execute permission to the owner and group (represented by ug) of the file named "hello", and add read permission to others (represented by o). If the user running the command has sufficient privileges, the permissions of the file will be changed accordingly.
 
+
+###### change the permissions of a file or directory : 
+```shell
+chmod +x hello
+```
+>the command chmod +x hello means "add execute permission for all users to the file named 'hello'". After running this command, any user on the system will be able to execute the hello file if they have permission to access it.
+
+###### change the permissions of a file or directory : 
+```shell
+chmod 007
+
+In the mode string 007, the first digit 0 represents the special permissions of the file, the second digit 0 represents the permissions for the owner, the third digit 7 represents the permissions for the group, and the fourth digit 7 represents the permissions for all other users.
+
+The digits in the mode string represent the permissions as follows:
+
+0: no permission
+1: execute permission
+2: write permission
+3: write and execute permissions
+4: read permission
+5: read and execute permissions
+6: read and write permissions
+7: read, write, and execute permissions
+So, the command chmod 007 hello means "set no permissions for the owner and group, and give read, write, and execute permissions for all other users to the file named 'hello'". This mode is generally not recommended since it gives full permissions to all other users on the system, which can be a security risk.
+```
+
+######  set the permissions of one file to be the same as another file : 
+```shell
+chmod --reference=olleh hello
+```
+>The --reference option is used to set the permissions of one file to be the same as another file.
+So, the command chmod --reference=olleh hello means "set the permissions of the file named 'hello' to be the same as the file named 'olleh'". This will copy the permissions of the olleh file and apply them to the hello file.
+Note that the olleh file must exist in the same directory as the hello file for this command to work. If the olleh file is located in a different directory, you will need to specify the full path to the olleh file in the command.
+
+######  set the permissions of one file to be the same as another file : 
+```shell
+chmod -R +X .
+```
+>The -R option is used to apply the permissions recursively to all files and directories within the specified directory.
+The +X option means "add execute permission for directories and files that already have execute permission".
+The . at the end of the command specifies the current directory.
+So, the command chmod -R +X . means "recursively add execute permission for directories and files that already have execute permission within the current directory".
+This command will modify the permissions of all files and directories within the current directory and its subdirectories that already have execute permission. It is useful for making all directories executable, which can be necessary for some programs or scripts to work properly.
+
